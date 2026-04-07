@@ -1,0 +1,60 @@
+# ~/.mediamaster/config.yaml
+# MediaMaster v2 Configuration
+
+global:
+  postiz_api_key: ""
+  default_timeout: 30
+  max_retries: 3
+  log_level: INFO
+
+# Postiz-based platforms (LinkedIn, Twitter, Instagram)
+# All use the same Postiz instance
+linkedin:
+  api_key: ""
+  postiz_url: http://localhost:4000
+  workspace_id: ""
+
+twitter:
+  api_key: ""
+  api_secret: ""
+  access_token: ""
+  access_secret: ""
+  postiz_url: http://localhost:4000
+
+instagram:
+  api_key: ""
+  postiz_url: http://localhost:4000
+  username: ""
+
+# YouTube — requires OAuth2 credentials
+youtube:
+  client_secrets_path: ~/.config/mediamaster/client_secrets.json
+  credentials_path: ~/.config/mediamaster/youtube_credentials.json
+  channel_id: ""
+  upload_bucket: mediamaster-uploads
+
+# TikTok — pending API approval
+tiktok:
+  api_key: ""
+  username: ""
+
+# Discord bot
+discord:
+  bot_token: ""
+  default_channel_id: ""
+
+# Telegram bot
+telegram:
+  bot_token: ""
+  allowed_chat_ids: []
+
+# Pinterest
+pinterest:
+  access_token: ""
+  board_id: ""
+
+# Twitch
+twitch:
+  client_id: ""
+  client_secret: ""
+  channel_name: ""
